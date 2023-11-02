@@ -20,9 +20,13 @@ public class Program {
         System.out.print("Enter tax: ");
         employee.tax = sc.nextDouble();
 
+        System.out.println();
         System.out.println("Employee: "+ employee);
 
-
-
+        System.out.println("Which percentage to increase salary? ");
+        double increase = sc.nextDouble();
+        employee.increaseSalary(increase);
+        System.out.println("Updated data: "+ employee);
+        sc.close();
     }
 }

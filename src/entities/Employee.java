@@ -7,6 +7,9 @@ public class Employee {
     public double netSalary (){
         return grossSalary - tax;
     }
+    public void increaseSalary (double increase){
+        grossSalary += grossSalary*(increase/100);
+    }
 
     @Override
     public String toString() {
